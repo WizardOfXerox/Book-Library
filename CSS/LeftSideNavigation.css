@@ -1,0 +1,79 @@
+.nav-sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2e2e31;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    width: 200px;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav-sidebar.close {
+    transform: translateX(-250px);
+    -webkit-transform: translateX(-250px);
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -o-transform: translateX(-250px);
+}
+
+.nav-sidebar[data-state="opened"]~main {
+    margin-left: 220px;
+}
+
+.nav-sidebar a {
+    padding-left: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #B3B3B3;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav-sidebar h2 {
+    padding-left: 15px;
+}
+
+.nav-sidebar a:hover {
+    background-color: var(--color-accent-neon-green-2);
+    color: #242424;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #2e2e31;
+    color: #B3B3B3;
+    padding: 10px 15px;
+    border: none;
+    margin: 10px;
+}
+
+.creation-nav-link-btn.active {
+    background-color: var(--color-accent-neon-green-2);
+    color: #242424;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.openbtn:hover {
+    background-color: var(--color-accent-neon-green-2);
+    color: #242424;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}

@@ -1,0 +1,112 @@
+/*.creation-nav-link-btn {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: var(--color-gray-medium);
+    color: var(--color-gray-light);
+    padding: 8px 15px;
+    border: none;
+    margin: 10px;
+} */
+
+.creation-nav-link-btn:hover {
+    background-color: var(--color-accent-neon-green-2);
+    color: var(--color-surface-2);
+}
+
+.creation-nav-link-btn {
+    padding-left: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #B3B3B3;
+    display: block;
+    transition: 0.3s;
+}
+
+.project-button-container {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.book-contents {
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    /* justify-content: ; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    scroll-snap-align: center;
+    overflow-x: auto;
+    background-color: var(--color-gray-medium);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.book-contents a {
+    text-decoration: none;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0px;
+    flex: 1 1 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 173px;
+    height: 250px;
+    transition: transform 0.3s;
+}
+
+.book-card-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    height: 100%;
+    background-size: 175px 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.book-card-image h2 {
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, margin 0.5s ease-out;
+}
+
+.book-card-image:hover h2 {
+    margin: 20px;
+    opacity: 1;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.book-card h2 {
+    margin: 10px 0;
+    color: var(--color-accent-neon-green-2);
+    text-align: center;
+}
+
+.section-c1 {
+    display: none;
+}
+
+.section-c1.active {
+    display: block;
+    animation: slideDown 0.5s ease;
+    transition: transform 0.3s, flex-basis 0.3s;
+}

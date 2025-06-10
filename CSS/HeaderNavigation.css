@@ -1,0 +1,218 @@
+/*Navigation */
+
+.nav-header {
+    background-color: var(--color-gray-medium);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    max-height: 48px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: rgb(2, 255, 136, 0.7);
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    transform: translateY(-48px);
+    /*Initialhiddenstate*/
+    transition: transform 1s ease;
+    animation: progress-bar-load 3s normal forwards;
+    pointer-events: auto;
+    /*Ensureinteractionsareallowed*/
+    -webkit-animation: progress-bar-load 3s normal forwards;
+    -webkit-transform: translateY(-48px);
+    -moz-transform: translateY(-48px);
+    -ms-transform: translateY(-48px);
+    -o-transform: translateY(-48px);
+}
+
+
+/* Ensure hover state works properly */
+
+.nav-header:hover {
+    transform: translateY(0);
+    /* Show header on hover */
+}
+
+.nav-header:hover~.main-content {
+    padding-top: 70px;
+}
+
+.nav-header a {
+    float: left;
+    display: block;
+    color: var(--color-gray-light);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+
+/* Default: Show text links and hide icon links */
+
+.text-links {
+    display: block;
+}
+
+.icon-links {
+    display: none;
+}
+
+
+/* Responsive: Hide text links and show icon links */
+
+@media (max-width: 1111px) {
+    .text-links {
+        display: none;
+    }
+    .icon-links {
+        display: block;
+    }
+}
+
+
+/* @media screen and (max-width: 530px) and (orientation: portrait) {
+    .nav-header {
+        top: -48px;
+    }
+}
+
+ @media screen and (max-width: 412px) and (max-device-width: 914px) and (orientation: portrait) {
+    .nav-header {
+        top: -48px;
+    }
+    .nav-header:hover {
+        transform: translateY(48px);
+        -webkit-transform: translateY(48px);
+        -moz-transform: translateY(48px);
+        -ms-transform: translateY(48px);
+        -o-transform: translateY(48px);
+    }
+    .nav-header:hover~.main-content {
+        padding-top: 120px;
+    }
+} */
+
+.nav-header a:hover {
+    background-color: var(--color-accent-neon-green-2);
+    color: var(--color-surface-2);
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.nav-header a.active {
+    background-color: var(--color-accent-neon-green-2);
+    color: var(--color-surface-2);
+}
+
+.nav-links .nav-search-container:hover {
+    color: var(--color-surface-2);
+}
+
+.nav-search-container i {
+    float: left;
+    display: block;
+    color: var(--color-gray-light);
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-search-container i:hover {
+    background-color: var(--color-accent-neon-green-2);
+    color: var(--color-surface-2);
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.nav-pin i {
+    color: var(--color-gray-light);
+}
+
+.text-logo {
+    gap: 4rem;
+}
+
+
+/*Neon*/
+
+.text-logo a {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.text-logo a:nth-child(1) {
+    font-family: "Press Start 2P", system-ui;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-accent-neon-green-2), 0 0 70px var(--color-accent-neon-green-2), 0 0 80px var(--color-accent-neon-green-2), 0 0 100px var(--color-accent-neon-green-2), 0 0 150px var(--color-accent-neon-green-2);
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--color-accent-neon-green-2), 0 0 35px var(--color-accent-neon-green-2), 0 0 40px var(--color-accent-neon-green-2), 0 0 50px var(--color-accent-neon-green-2), 0 0 75px var(--color-accent-neon-green-2);
+    }
+}
+
+@keyframes neon2 {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-accent-neon-green-2), 0 0 70px var(--color-accent-neon-green-2), 0 0 80px var(--color-accent-neon-green-2), 0 0 100px var(--color-accent-neon-green-2), 0 0 150px var(--color-accent-neon-green-2);
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--color-accent-neon-green-2), 0 0 35px var(--color-accent-neon-green-2), 0 0 40px var(--color-accent-neon-green-2), 0 0 50px var(--color-accent-neon-green-2), 0 0 75px var(--color-accent-neon-green-2);
+    }
+}
+
+.nav-search {
+    width: 220px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    border: none;
+    border-top: 2px solid rgb(2, 255, 136, 0.7);
+    border-bottom: 2px solid rgb(2, 255, 136, 0.7);
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    padding-top: 5px;
+}
+
+.nav-search:focus {
+    border-top: 2px solid var(--color-gray-light);
+    border-bottom: 2px solid var(--color-gray-light);
+}
+
+.nav-search-container {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-search-container:hover {
+    width: 270px;
+}
+
+.nav-search-container:hover .nav-search {
+    opacity: 1;
+}
+
+
+/*.nav-link.active {
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+}*/
