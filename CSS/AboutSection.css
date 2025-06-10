@@ -267,10 +267,10 @@
 
 @media screen and (max-width: 900px) {
     .label-card {
-        min-width: 100px;
+        min-width: 110px;
         background-size: cover;
         height: 225px;
-        flex: 1 1 calc(18% - 20px);
+        flex: 1 1 calc(15% - 20px);
     }
     .label-contents {
         height: 225px;

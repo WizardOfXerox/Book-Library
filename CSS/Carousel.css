@@ -10,10 +10,6 @@
 }
 
 @media screen and (max-width: 884px) and (orientation: portrait) {
-    .carousel-pages,
-    .carousel-container {
-        height: 300px;
-    }
     .about-content {
         max-height: 300px;
     }
