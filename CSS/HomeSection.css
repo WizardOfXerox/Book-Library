@@ -255,13 +255,11 @@
 }
 
 .label-card-image h2 {
-    margin: 20px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, margin 0.5s ease-out;
 }
 
 .label-card-image:hover h2 {
-    margin: 20px;
     opacity: 1;
 }
 

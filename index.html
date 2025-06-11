@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./CSS/LeftSideNavigation.css" />
     <link rel="stylesheet" href="./CSS/ProjectNavigation.css" />
     <link rel="stylesheet" href="./CSS/FooterNavigation.css" />
-    <link rel="stylesheet" href="./CSS/AboutSection.css" />
+    <link rel="stylesheet" href="./CSS/HomeSection.css" />
+    <link rel="stylesheet" href="./CSS/AccountSection.css" />
     <link rel="stylesheet" href="./CSS/Carousel.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -24,11 +25,9 @@
 </head>
 
 <body>
-    <!--
     <div class="Stars" id='stars'></div>
     <div class="Stars" id='stars2'></div>
     <div class="Stars" id='stars3'></div>
-    -->
     <div class="nav-header" id="header" data-pinned="false">
         <div class="nav-content">
             <div class="text-logo">
@@ -243,10 +242,9 @@
                         <h2 style="margin-bottom: 0;">Announcement</h2>
                         <div class="profile-details">
                             <a>The Website is currently on Maintainance and some feature wont work for now.</a>
-                            <a>Planned Design:
-                                1.) Book Chapter Page.
-                                2.) Book Reading Page.
-                            </a>
+                            <p>Planned Design:</p>
+                            <a>Book Chapter Page.</a>
+                            <a>Book Reading Page.</a>
                         </div>
                     </div>
                     <div class="label-section">
@@ -1623,8 +1621,30 @@
         </div>
 
         <div id="account" class="section">
-            <!-- Prince Here -->
-            <h1>Hello, Edit here</h1>
+            <div class="login">
+                <h1>Online Book Library</h1>
+                <h4>Log in to CONNECT</h4>
+                <p>to continue to Online Book Library</p>
+                <div class="buttons">
+                    <button class="gmail-btn">
+     <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fscienceconnect.io%2Fproxy%2Fapi%2Foauth%2Foidc%2Fgoogle%2Fcallback&state=zBonB7ttYt3N9ligBCqQYqBhocgI0ZRYsmWXRqFMKyqezErFOthnIUwGQoMTGHlEdDFXg1EvR4fBKo3yqDoYCQ%3D%3D&nonce=luzQUcCB2EHUSGhsw9RF49fnDX_cEWLgUGc4t5F-iW4&client_id=686913394575-qbu72qprta0vipm3ugrm9thkkdlu0jgp.a
+     pps.googleusercontent.com&scope=openid%20profile%20email&service=lso&o2v=2&flowName=GeneralOAuthFlow"> <span class="logo">G</span> Gmail</a>
+    </button>
+                    <button class="facebook-btn">
+    <a href="https://www.facebook.com/">  <span class="logo">f</span> Facebook</a>
+    </button>
+                </div>
+                <form>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+                    <button type="submit">Continue</button>
+                </form>
+
+                <p>Dont have an account? <a href="#">Sign up now</a></p>
+
+
+            </div>
         </div>
     </main>
     <div class="footer">

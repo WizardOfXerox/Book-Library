@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OBL LOGIN</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: Arial, sans-serif;
+        }
+        
+        .login {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        }
+        
+        .login h1 {
+            text-align: center;
+            font-style: Georgia, serif;
+        }
+        
+        .login h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .login h4 {
+            text-align: center;
+        }
+        
+        .login p {
+            text-align: center;
+        }
+        
+        .login label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .login input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .login button {
+            width: 100%;
+            padding: 10px;
+            background-color: #16bd56;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .login button:hover {
+            background-color: #000000;
+        }
+        
+        .buttons {
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .buttons button {
+            width: 130px;
+            margin: 5px;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 13px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gmail-btn {
+            background-color: #db4437;
+        }
+        
+        .facebook-btn {
+            background-color: #3b5998;
+        }
+        
+        .gmail-btn:hover {
+            background-color: #c1351d;
+        }
+        
+        .facebook-btn:hover {
+            background-color: #2d4373;
+        }
+        
+        .logo {
+            background-color: white;
+            color: #333;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        
+        .gmail-btn a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .facebook-btn a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        a {
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+        <h1>Online Book Library</h1>
+        <h4>Log in to CONNECT</h4>
+        <p>to continue to Online Book Library</p>
+        <div class="buttons">
+            <button class="gmail-btn">
+     <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fscienceconnect.io%2Fproxy%2Fapi%2Foauth%2Foidc%2Fgoogle%2Fcallback&state=zBonB7ttYt3N9ligBCqQYqBhocgI0ZRYsmWXRqFMKyqezErFOthnIUwGQoMTGHlEdDFXg1EvR4fBKo3yqDoYCQ%3D%3D&nonce=luzQUcCB2EHUSGhsw9RF49fnDX_cEWLgUGc4t5F-iW4&client_id=686913394575-qbu72qprta0vipm3ugrm9thkkdlu0jgp.a
+     pps.googleusercontent.com&scope=openid%20profile%20email&service=lso&o2v=2&flowName=GeneralOAuthFlow"> <span class="logo">G</span> Gmail</a>
+    </button>
+            <button class="facebook-btn">
+    <a href="https://www.facebook.com/">  <span class="logo">f</span> Facebook</a>
+    </button>
+        </div>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+            <button type="submit">Continue</button>
+        </form>
+
+        <p>Dont have an account? <a href="#">Sign up now</a></p>
+
+
+    </div>
+
+</body>
+
+</html>

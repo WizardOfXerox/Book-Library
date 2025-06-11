@@ -42,10 +42,13 @@
     /* var(--color-surface-3) */
     --color-surface-4: #050000;
     /* var(--color-surface-4) */
+    --color-surface-5: #ffffff;
+    /* var(--color-surface-5) */
 }
 
 body {
     background-color: var(--color-surface-3);
+    /* background-color: #F8F8FF; */
     /*background-image: url(../Images/background.webp);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -86,7 +89,7 @@ h2 {
     -o-transition: margin-left 0.5s, padding-top 0.5s;
 }
 
-.card-container {
+.home-container {
     display: flex;
     gap: 0px;
     overflow-x: auto;
@@ -94,87 +97,6 @@ h2 {
     scroll-snap-type: x mandatory;
     flex-wrap: wrap;
     overflow: hidden;
-}
-
-@media screen and (max-width: 884px) and (max-device-width: 914px) and (orientation: portrait) {
-    .card-solo {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
-
-.card-solo {
-    background-color: var(--color-gray-dark);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: auto;
-    max-width: auto;
-    max-height: auto;
-    display: flex;
-    flex-direction: row;
-    scroll-snap-align: center;
-    transition: transform 0.3s, flex-basis 0.3s;
-    animation: slideDown 0.5s ease;
-    margin: 10px 12px;
-    flex-grow: 1;
-    -webkit-transition: transform 0.3s, flex-basis 0.3s;
-    -moz-transition: transform 0.3s, flex-basis 0.3s;
-    -ms-transition: transform 0.3s, flex-basis 0.3s;
-    -o-transition: transform 0.3s, flex-basis 0.3s;
-}
-
-.card-content {
-    padding: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    /* max-height: calc(100% - 150px); */
-    max-height: 100%;
-    text-align: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.card-content h2,
-.card-content h3 {
-    margin: 10px 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* white-space: nowrap; */
-    cursor: pointer;
-}
-
-.card-content h2 {
-    flex-shrink: 0;
-}
-
-.card-content p {
-    margin: 5px 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* white-space: nowrap; */
-    text-decoration: none;
-}
-
-.card-content a {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-decoration: none;
-    color: var(--color-gray-light);
-}
-
-.card-content iframe {
-    border: solid var(--color-accent-neon-green-2);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px var(--color-accent-neon-green-2);
-}
-
-.card-solo:hover {
-    transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -o-transform: scale(1.03);
 }
 
 @keyframes slideDown {
