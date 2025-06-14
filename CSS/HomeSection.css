@@ -275,6 +275,7 @@
     background-size: 175px 250px;
     background-position: center center;
     background-repeat: no-repeat;
+    aspect-ratio: 2 / 3;
 }
 
 .label-card-image h2 {

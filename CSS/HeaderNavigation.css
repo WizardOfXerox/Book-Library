@@ -38,7 +38,8 @@
     padding-top: 70px;
 }
 
-.nav-header a {
+.nav-header a,
+.profile-card button {
     float: left;
     display: block;
     color: var(--color-gray-light);
@@ -47,6 +48,14 @@
     text-decoration: none;
     font-size: 17px;
     transition: 0.3s;
+}
+
+.profile-card button {
+    background-color: transparent;
+    border: none;
+    color: var(--color-gray-light);
+    font-size: 17px;
+    cursor: pointer;
 }
 
 
@@ -95,7 +104,8 @@
     }
 } */
 
-.nav-header a:hover {
+.nav-header a:hover,
+.profile-card button:hover {
     background-color: var(--color-accent-neon-green-2);
     color: var(--color-surface-2);
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
