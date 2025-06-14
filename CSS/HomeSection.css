@@ -18,7 +18,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     gap: 20px;
     width: 100%;
-    justify-content: center;
+    justify-content: left;
+    /* Align items to the center prev */
 }
 
 .profile-card,
@@ -221,7 +222,6 @@
     align-items: center;
     justify-content: center;
     scroll-snap-align: center;
-    overflow-x: auto;
     background-color: var(--color-gray-medium);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
