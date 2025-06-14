@@ -217,17 +217,40 @@
     gap: 15px;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 250px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
     scroll-snap-align: center;
     overflow-x: auto;
     background-color: var(--color-gray-medium);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .label-contents a {
     text-decoration: none;
+}
+
+.label-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
+    margin: 0;
+}
+
+.label-title p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    overflow: hidden;
 }
 
 .label-card {
@@ -265,13 +288,7 @@
 
 @media screen and (max-width: 900px) {
     .label-card {
-        min-width: 115px;
-        background-size: cover;
-        height: 225px;
         flex: 1 1 calc(15% - 20px);
-    }
-    .label-contents {
-        height: 225px;
     }
     .services-section h1:first-child {
         margin-top: 20px;

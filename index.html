@@ -66,18 +66,17 @@
     </div>
     <div id="mySidebar" class="nav-sidebar close" data-state="closed">
         <h2>GENRES</h2>
-        <a id="FictionToggle" class="creation-nav-link-btn active" data-target="Fiction">Fiction</a>
-        <a id="Non-FictionToggle" class="creation-nav-link-btn" data-target="Non-Fiction">Non-Fiction</a>
-        <a id="MysteryToggle" class="creation-nav-link-btn" data-target="Mystery">Mystery</a>
+        <a id="DramaToggle" class="creation-nav-link-btn active" data-target="Drama">Drama</a>
         <a id="RomanceToggle" class="creation-nav-link-btn" data-target="Romance">Romance</a>
-        <a id="FantasyToggle" class="creation-nav-link-btn" data-target="Fantasy">Fantasy</a>
-        <a id="HistoricalToggle" class="creation-nav-link-btn" data-target="Historical">Historical</a>
-        <a id="Science-FictionToggle" class="creation-nav-link-btn" data-target="Science-Fiction">Science Fiction</a>
-        <a id="HorrorToggle" class="creation-nav-link-btn" data-target="Horror">Horror</a>
-        <a id="Action-&-AdventureToggle" class="creation-nav-link-btn" data-target="Action-&-Adventure">Action & Adventure</a>
-        <a id="ThrillerToggle" class="creation-nav-link-btn" data-target="Thriller">Thriller</a>
         <a id="Slice-of-LifeToggle" class="creation-nav-link-btn" data-target="Slice-of-Life">Slice Of Life</a>
-        <a id="ApocalypseToggle" class="creation-nav-link-btn" data-target="Thriller">Apocalypse</a>
+        <a id="SportToggle" class="creation-nav-link-btn" data-target="Sport">Sport</a>
+        <a id="ComedyToggle" class="creation-nav-link-btn" data-target="Comedy">Comedy</a>
+        <a id="Sci-FiToggle" class="creation-nav-link-btn" data-target="Sci-fi">Sci-fi</a>
+        <a id="HorrorToggle" class="creation-nav-link-btn" data-target="Horror">Horror</a>
+        <a id="ActionToggle" class="creation-nav-link-btn" data-target="Action">Action</a>
+        <a id="ThrillerToggle" class="creation-nav-link-btn" data-target="Thriller">Thriller</a>
+        <a id="ApocalypseToggle" class="creation-nav-link-btn" data-target="Apocalypse">Apocalypse</a>
+        <a id="CrimeToggle" class="creation-nav-link-btn" data-target="Crime">Crime</a>
     </div>
     <main class="main-content" id="main-content">
         <div id="home" class="section active">
@@ -250,215 +249,495 @@
                     <div class="label-section">
                         <h1>Reading</h1>
                         <div class="label-contents">
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                                    <h2>Flying Since 1964</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                                    <h2>The Haunted House</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                                    <h2>Paper Chase</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                                    <h2>The Quiet Night</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                                    <h2>Dark Obsession</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                                    <h2>Crimson Threads</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                                    <h2>Underground City</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                                    <h2>Cyber City</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                                    <h2>The Nameless Thieves</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                                    <h2>Cocktail Party</h2>
-                                </div>
-                            </a>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/1.png"></div>
+                                </a>
+                                <p>Flying Since 1964</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/2.png"></div>
+                                </a>
+                                <p>The Haunted House</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/3.png"></div>
+                                </a>
+                                <p>Paper Chase</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/4.png"></div>
+                                </a>
+                                <p>The Quiet Night</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/5.png"></div>
+                                </a>
+                                <p>Dark Obsession</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/6.png"></div>
+                                </a>
+                                <p>Crimson Threads</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/7.png"></div>
+                                </a>
+                                <p>Underground City</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/8.png"></div>
+                                </a>
+                                <p>Cyber City</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/9.png"></div>
+                                </a>
+                                <p>The Nameless Thieves</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/10.png"></div>
+                                </a>
+                                <p>Cocktail Party</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/11.png"></div>
+                                </a>
+                                <p>What's Wrong With My Boss</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/12.png"></div>
+                                </a>
+                                <p>The Independent Woman</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/13.png"></div>
+                                </a>
+                                <p>The Undead</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/14.png"></div>
+                                </a>
+                                <p>Mr. Nice Guy</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/15.png"></div>
+                                </a>
+                                <p>Be Ware of the Woods</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/16.png"></div>
+                                </a>
+                                <p>New Era</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/17.png"></div>
+                                </a>
+                                <p>Winning Game</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/18.png"></div>
+                                </a>
+                                <p>Nationals</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/19.png"></div>
+                                </a>
+                                <p>Sinister</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/20.png"></div>
+                                </a>
+                                <p>Last Day On Earth</p>
+                            </div>
                         </div>
                         <h1>Bookmarks</h1>
                         <div class="label-contents">
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                                    <h2>Flying Since 1964</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                                    <h2>The Haunted House</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                                    <h2>Paper Chase</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                                    <h2>The Quiet Night</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                                    <h2>Dark Obsession</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                                    <h2>Crimson Threads</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                                    <h2>Underground City</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                                    <h2>Cyber City</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                                    <h2>The Nameless Thieves</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                                    <h2>Cocktail Party</h2>
-                                </div>
-                            </a>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/1.png"></div>
+                                </a>
+                                <p>Flying Since 1964</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/2.png"></div>
+                                </a>
+                                <p>The Haunted House</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/3.png"></div>
+                                </a>
+                                <p>Paper Chase</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/4.png"></div>
+                                </a>
+                                <p>The Quiet Night</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/5.png"></div>
+                                </a>
+                                <p>Dark Obsession</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/6.png"></div>
+                                </a>
+                                <p>Crimson Threads</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/7.png"></div>
+                                </a>
+                                <p>Underground City</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/8.png"></div>
+                                </a>
+                                <p>Cyber City</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/9.png"></div>
+                                </a>
+                                <p>The Nameless Thieves</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/10.png"></div>
+                                </a>
+                                <p>Cocktail Party</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/11.png"></div>
+                                </a>
+                                <p>What's Wrong With My Boss</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/12.png"></div>
+                                </a>
+                                <p>The Independent Woman</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/13.png"></div>
+                                </a>
+                                <p>The Undead</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/14.png"></div>
+                                </a>
+                                <p>Mr. Nice Guy</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/15.png"></div>
+                                </a>
+                                <p>Be Ware of the Woods</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/16.png"></div>
+                                </a>
+                                <p>New Era</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/17.png"></div>
+                                </a>
+                                <p>Winning Game</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/18.png"></div>
+                                </a>
+                                <p>Nationals</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/19.png"></div>
+                                </a>
+                                <p>Sinister</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/20.png"></div>
+                                </a>
+                                <p>Last Day On Earth</p>
+                            </div>
                         </div>
                         <h1>Trending</h1>
                         <div class="label-contents">
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                                    <h2>Flying Since 1964</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                                    <h2>The Haunted House</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                                    <h2>Paper Chase</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                                    <h2>The Quiet Night</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                                    <h2>Dark Obsession</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                                    <h2>Crimson Threads</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                                    <h2>Underground City</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                                    <h2>Cyber City</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                                    <h2>The Nameless Thieves</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                                    <h2>Cocktail Party</h2>
-                                </div>
-                            </a>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/1.png"></div>
+                                </a>
+                                <p>Flying Since 1964</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/2.png"></div>
+                                </a>
+                                <p>The Haunted House</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/3.png"></div>
+                                </a>
+                                <p>Paper Chase</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/4.png"></div>
+                                </a>
+                                <p>The Quiet Night</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/5.png"></div>
+                                </a>
+                                <p>Dark Obsession</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/6.png"></div>
+                                </a>
+                                <p>Crimson Threads</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/7.png"></div>
+                                </a>
+                                <p>Underground City</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/8.png"></div>
+                                </a>
+                                <p>Cyber City</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/9.png"></div>
+                                </a>
+                                <p>The Nameless Thieves</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/10.png"></div>
+                                </a>
+                                <p>Cocktail Party</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/11.png"></div>
+                                </a>
+                                <p>What's Wrong With My Boss</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/12.png"></div>
+                                </a>
+                                <p>The Independent Woman</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/13.png"></div>
+                                </a>
+                                <p>The Undead</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/14.png"></div>
+                                </a>
+                                <p>Mr. Nice Guy</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/15.png"></div>
+                                </a>
+                                <p>Be Ware of the Woods</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/16.png"></div>
+                                </a>
+                                <p>New Era</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/17.png"></div>
+                                </a>
+                                <p>Winning Game</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/18.png"></div>
+                                </a>
+                                <p>Nationals</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/19.png"></div>
+                                </a>
+                                <p>Sinister</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/20.png"></div>
+                                </a>
+                                <p>Last Day On Earth</p>
+                            </div>
                         </div>
                         <h1>New</h1>
                         <div class="label-contents">
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                                    <h2>Flying Since 1964</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                                    <h2>The Haunted House</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                                    <h2>Paper Chase</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                                    <h2>The Quiet Night</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                                    <h2>Dark Obsession</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                                    <h2>Crimson Threads</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                                    <h2>Underground City</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                                    <h2>Cyber City</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                                    <h2>The Nameless Thieves</h2>
-                                </div>
-                            </a>
-                            <a class="label-card" href="https://example.com/">
-                                <div class="label-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                                    <h2>Cocktail Party</h2>
-                                </div>
-                            </a>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/1.png"></div>
+                                </a>
+                                <p>Flying Since 1964</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/2.png"></div>
+                                </a>
+                                <p>The Haunted House</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/3.png"></div>
+                                </a>
+                                <p>Paper Chase</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/4.png"></div>
+                                </a>
+                                <p>The Quiet Night</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/5.png"></div>
+                                </a>
+                                <p>Dark Obsession</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/6.png"></div>
+                                </a>
+                                <p>Crimson Threads</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/7.png"></div>
+                                </a>
+                                <p>Underground City</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/8.png"></div>
+                                </a>
+                                <p>Cyber City</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/9.png"></div>
+                                </a>
+                                <p>The Nameless Thieves</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/10.png"></div>
+                                </a>
+                                <p>Cocktail Party</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/11.png"></div>
+                                </a>
+                                <p>What's Wrong With My Boss</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/12.png"></div>
+                                </a>
+                                <p>The Independent Woman</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/13.png"></div>
+                                </a>
+                                <p>The Undead</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/14.png"></div>
+                                </a>
+                                <p>Mr. Nice Guy</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/15.png"></div>
+                                </a>
+                                <p>Be Ware of the Woods</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/16.png"></div>
+                                </a>
+                                <p>New Era</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/17.png"></div>
+                                </a>
+                                <p>Winning Game</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/18.png"></div>
+                                </a>
+                                <p>Nationals</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/19.png"></div>
+                                </a>
+                                <p>Sinister</p>
+                            </div>
+                            <div class="label-title">
+                                <a class="label-card" href="https://example.com/">
+                                    <div class="label-card-image lazyload" data-bg="./Images/BOOKCOVER/20.png"></div>
+                                </a>
+                                <p>Last Day On Earth</p>
+                            </div>
                         </div>
                     </div>
                     <div class="testimonials-section">
@@ -596,7 +875,7 @@
                 <button id="ApocalypseToggle" class="creation-nav-link-btn" data-target="Thriller">Apocalypse</button>-->
             </div>
 
-            <div id="Fiction" class="section-c1 active">
+            <div id="Action" class="section-c1 active">
                 <div class="book-contents">
                     <a class="book-card" href="https://example.com/">
                         <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
@@ -660,7 +939,7 @@
                     </a>
                 </div>
             </div>
-            <div id="Non-Fiction" class="section-c1 active">
+            <div id="Romance" class="section-c1">
                 <div class="book-contents">
                     <a class="book-card" href="https://example.com/">
                         <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
@@ -724,7 +1003,7 @@
                     </a>
                 </div>
             </div>
-            <div id="Mystery" class="section-c1 active">
+            <div id="Comedy" class="section-c1">
                 <div class="book-contents">
                     <a class="book-card" href="https://example.com/">
                         <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
@@ -788,7 +1067,7 @@
                     </a>
                 </div>
             </div>
-            <div id="Romance" class="section-c1 active">
+            <div id="Horror" class="section-c1">
                 <div class="book-contents">
                     <a class="book-card" href="https://example.com/">
                         <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
@@ -852,7 +1131,7 @@
                     </a>
                 </div>
             </div>
-            <div id="Fantasy" class="section-c1 active">
+            <div id="Sci-fi" class="section-c1">
                 <div class="book-contents">
                     <a class="book-card" href="https://example.com/">
                         <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
@@ -916,7 +1195,7 @@
                     </a>
                 </div>
             </div>
-            <div id="Historical" class="section-c1 active">
+            <div id="Sports" class="section-c1">
                 <div class="book-contents">
                     <a class="book-card" href="https://example.com/">
                         <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
@@ -980,7 +1259,7 @@
                     </a>
                 </div>
             </div>
-            <div id="Science-Fiction" class="section-c1 active">
+            <div id="Thriller" class="section-c1">
                 <div class="book-contents">
                     <a class="book-card" href="https://example.com/">
                         <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
@@ -1044,263 +1323,7 @@
                     </a>
                 </div>
             </div>
-            <div id="Horror" class="section-c1 active">
-                <div class="book-contents">
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                            <h2>Flying Since 1964</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                            <h2>The Haunted House</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                            <h2>Paper Chase</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                            <h2>The Quiet Night</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                            <h2>Dark Obsession</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                            <h2>Crimson Threads</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                            <h2>Underground City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                            <h2>Cyber City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                            <h2>The Nameless Thieves</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                            <h2>Cocktail Party</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
-                            <h2>What's Wrong With My Boss</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
-                            <h2>The Independent Woman</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="Action-&-Adventure" class="section-c1 active">
-                <div class="book-contents">
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                            <h2>Flying Since 1964</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                            <h2>The Haunted House</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                            <h2>Paper Chase</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                            <h2>The Quiet Night</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                            <h2>Dark Obsession</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                            <h2>Crimson Threads</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                            <h2>Underground City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                            <h2>Cyber City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                            <h2>The Nameless Thieves</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                            <h2>Cocktail Party</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
-                            <h2>What's Wrong With My Boss</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
-                            <h2>The Independent Woman</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="Slice-of-Life" class="section-c1 active">
-                <div class="book-contents">
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                            <h2>Flying Since 1964</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                            <h2>The Haunted House</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                            <h2>Paper Chase</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                            <h2>The Quiet Night</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                            <h2>Dark Obsession</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                            <h2>Crimson Threads</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                            <h2>Underground City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                            <h2>Cyber City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                            <h2>The Nameless Thieves</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                            <h2>Cocktail Party</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
-                            <h2>What's Wrong With My Boss</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
-                            <h2>The Independent Woman</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="Thriller" class="section-c1 active">
-                <div class="book-contents">
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                            <h2>Flying Since 1964</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                            <h2>The Haunted House</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                            <h2>Paper Chase</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                            <h2>The Quiet Night</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                            <h2>Dark Obsession</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                            <h2>Crimson Threads</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                            <h2>Underground City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                            <h2>Cyber City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                            <h2>The Nameless Thieves</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                            <h2>Cocktail Party</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
-                            <h2>What's Wrong With My Boss</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
-                            <h2>The Independent Woman</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="Apocalypse" class="section-c1 active">
+            <div id="Apocalypse" class="section-c1">
                 <div class="book-contents">
                     <a class="book-card" href="https://example.com/">
                         <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
@@ -1367,256 +1390,252 @@
         </div>
 
         <div id="bookmark" class="section">
-            <div id="Fiction" class="section-c1 active">
-                <div class="book-contents">
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                            <h2>Flying Since 1964</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                            <h2>The Haunted House</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                            <h2>Paper Chase</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                            <h2>The Quiet Night</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                            <h2>Dark Obsession</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                            <h2>Crimson Threads</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                            <h2>Underground City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                            <h2>Cyber City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                            <h2>The Nameless Thieves</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                            <h2>Cocktail Party</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
-                            <h2>What's Wrong With My Boss</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
-                            <h2>The Independent Woman</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                            <h2>Flying Since 1964</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                            <h2>The Haunted House</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                            <h2>Paper Chase</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                            <h2>The Quiet Night</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                            <h2>Dark Obsession</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                            <h2>Crimson Threads</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                            <h2>Underground City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                            <h2>Cyber City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                            <h2>The Nameless Thieves</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                            <h2>Cocktail Party</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
-                            <h2>What's Wrong With My Boss</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
-                            <h2>The Independent Woman</h2>
-                        </div>
-                    </a>
-                </div>
+            <div class="book-contents">
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
+                        <h2>Flying Since 1964</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
+                        <h2>The Haunted House</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
+                        <h2>Paper Chase</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
+                        <h2>The Quiet Night</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
+                        <h2>Dark Obsession</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
+                        <h2>Crimson Threads</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
+                        <h2>Underground City</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
+                        <h2>Cyber City</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
+                        <h2>The Nameless Thieves</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
+                        <h2>Cocktail Party</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
+                        <h2>What's Wrong With My Boss</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
+                        <h2>The Independent Woman</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
+                        <h2>Flying Since 1964</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
+                        <h2>The Haunted House</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
+                        <h2>Paper Chase</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
+                        <h2>The Quiet Night</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
+                        <h2>Dark Obsession</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
+                        <h2>Crimson Threads</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
+                        <h2>Underground City</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
+                        <h2>Cyber City</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
+                        <h2>The Nameless Thieves</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
+                        <h2>Cocktail Party</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
+                        <h2>What's Wrong With My Boss</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
+                        <h2>The Independent Woman</h2>
+                    </div>
+                </a>
             </div>
         </div>
 
         <div id="history" class="section">
-            <div id="Fiction" class="section-c1 active">
-                <div class="book-contents">
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                            <h2>Flying Since 1964</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                            <h2>The Haunted House</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                            <h2>Paper Chase</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                            <h2>The Quiet Night</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                            <h2>Dark Obsession</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                            <h2>Crimson Threads</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                            <h2>Underground City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                            <h2>Cyber City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                            <h2>The Nameless Thieves</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                            <h2>Cocktail Party</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
-                            <h2>What's Wrong With My Boss</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
-                            <h2>The Independent Woman</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
-                            <h2>Flying Since 1964</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
-                            <h2>The Haunted House</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
-                            <h2>Paper Chase</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
-                            <h2>The Quiet Night</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
-                            <h2>Dark Obsession</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
-                            <h2>Crimson Threads</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
-                            <h2>Underground City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
-                            <h2>Cyber City</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
-                            <h2>The Nameless Thieves</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
-                            <h2>Cocktail Party</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
-                            <h2>What's Wrong With My Boss</h2>
-                        </div>
-                    </a>
-                    <a class="book-card" href="https://example.com/">
-                        <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
-                            <h2>The Independent Woman</h2>
-                        </div>
-                    </a>
-                </div>
+            <div class="book-contents">
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
+                        <h2>Flying Since 1964</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
+                        <h2>The Haunted House</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
+                        <h2>Paper Chase</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
+                        <h2>The Quiet Night</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
+                        <h2>Dark Obsession</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
+                        <h2>Crimson Threads</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
+                        <h2>Underground City</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
+                        <h2>Cyber City</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
+                        <h2>The Nameless Thieves</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
+                        <h2>Cocktail Party</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
+                        <h2>What's Wrong With My Boss</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
+                        <h2>The Independent Woman</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/1.png);">
+                        <h2>Flying Since 1964</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/2.png);">
+                        <h2>The Haunted House</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/3.png);">
+                        <h2>Paper Chase</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/4.png);">
+                        <h2>The Quiet Night</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/5.png);">
+                        <h2>Dark Obsession</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/6.png);">
+                        <h2>Crimson Threads</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/7.png);">
+                        <h2>Underground City</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/8.png);">
+                        <h2>Cyber City</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/9.png);">
+                        <h2>The Nameless Thieves</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/10.png);">
+                        <h2>Cocktail Party</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/11.png);">
+                        <h2>What's Wrong With My Boss</h2>
+                    </div>
+                </a>
+                <a class="book-card" href="https://example.com/">
+                    <div class="book-card-image" style="background-image: url(./Images/BOOKCOVER/12.png);">
+                        <h2>The Independent Woman</h2>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -1627,12 +1646,13 @@
                 <p>to continue to Online Book Library</p>
                 <div class="buttons">
                     <button class="gmail-btn">
-     <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fscienceconnect.io%2Fproxy%2Fapi%2Foauth%2Foidc%2Fgoogle%2Fcallback&state=zBonB7ttYt3N9ligBCqQYqBhocgI0ZRYsmWXRqFMKyqezErFOthnIUwGQoMTGHlEdDFXg1EvR4fBKo3yqDoYCQ%3D%3D&nonce=luzQUcCB2EHUSGhsw9RF49fnDX_cEWLgUGc4t5F-iW4&client_id=686913394575-qbu72qprta0vipm3ugrm9thkkdlu0jgp.a
-     pps.googleusercontent.com&scope=openid%20profile%20email&service=lso&o2v=2&flowName=GeneralOAuthFlow"> <span class="logo">G</span> Gmail</a>
-    </button>
+                            <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fscienceconnect.io%2Fproxy%2Fapi%2Foauth%2Foidc%2Fgoogle%2Fcallback&state=zBonB7ttYt3N9ligBCqQYqBhocgI0ZRYsmWXRqFMKyqezErFOthnIUwGQoMTGHlEdDFXg1EvR4fBKo3yqDoYCQ%3D%3D&nonce=luzQUcCB2EHUSGhsw9RF49fnDX_cEWLgUGc4t5F-iW4&client_id=686913394575-qbu72qprta0vipm3ugrm9thkkdlu0jgp.a
+     pps.googleusercontent.com&scope=openid%20profile%20email&service=lso&o2v=2&flowName=GeneralOAuthFlow">
+                            <span class="logo">G</span> Gmail</a>
+                    </button>
                     <button class="facebook-btn">
-    <a href="https://www.facebook.com/">  <span class="logo">f</span> Facebook</a>
-    </button>
+                        <a href="https://www.facebook.com/">  <span class="logo">f</span> Facebook</a>
+                    </button>
                 </div>
                 <form>
                     <label for="username">Username</label>
@@ -1642,8 +1662,6 @@
                 </form>
 
                 <p>Dont have an account? <a href="#">Sign up now</a></p>
-
-
             </div>
         </div>
     </main>
@@ -1670,6 +1688,20 @@
     <script src="./JS/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+
+    <script>
+        // Extend lazysizes to support background images
+        document.addEventListener('lazybeforeunveil', function(e) {
+            let bg = e.target.getAttribute('data-bg');
+            if (bg) {
+                e.target.style.backgroundImage = 'url(' + bg + ')';
+            }
+        });
+    </script>
 </body>
 
 </html>
