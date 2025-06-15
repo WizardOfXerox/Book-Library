@@ -3,7 +3,7 @@
 .footer-button {
     width: 35px;
     height: 35px;
-    border: var(--color-accent-neon-green-2) 12px solid;
+    border: var(--color-accent-neon-green-1) 12px solid;
     border-radius: 35px;
     margin: 0 auto;
     position: relative;
@@ -68,7 +68,7 @@
 .footer-nav a {
     margin: 5px;
     margin-top: 0;
-    color: var(--color-accent-neon-green-2);
+    color: var(--color-accent-neon-green-1);
     text-decoration: none;
     font-weight: bold;
     opacity: 1;
@@ -78,7 +78,7 @@
 }
 
 .footer-nav a:hover {
-    background-color: var(--color-accent-neon-green-2);
+    background-color: var(--color-accent-neon-green-1);
     color: #202020;
     transition: all 0.4s ease-in-out;
     border-radius: 50px;
@@ -92,7 +92,7 @@
     align-items: center;
     position: relative;
     bottom: 30px;
-    border-top: 10px solid var(--color-accent-neon-green-2);
+    border-top: 10px solid var(--color-accent-neon-green-1);
     border-width: 5px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -109,7 +109,7 @@
 }
 
 .copyright-text p a {
-    color: var(--color-accent-neon-green-2);
+    color: var(--color-accent-neon-green-1);
     text-decoration: none;
     opacity: 1;
     font-weight: bold;

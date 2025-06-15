@@ -17,31 +17,25 @@
 }
 
 :root {
-    /* Accent Colors */
+    /* Text Colors */
+    /* Header Color */
     --color-accent-neon-green-1: #05ff82;
     /* var(--color-accent-neon-green-1) */
-    --color-accent-neon-green-2: #02ff88;
-    /* var(--color-accent-neon-green-2) */
-    /* Neutral / Gray Tones */
+    /* Paragraph Color */
     --color-gray-light: #b3b3b3;
     /* var(--color-gray-light) */
+    /* Cards-Background Color */
     --color-gray-medium: #2e2e31;
     /* var(--color-gray-medium) */
-    --color-gray-medium-alt: #2f2e30;
-    /* var(--color-gray-medium-alt) */
-    --color-gray-dark: #2f2e2f;
-    /* var(--color-gray-dark) */
+    /* Testimonial-Background Color */
     --color-gray-deep: #1f1f1f;
     /* var(--color-gray-deep) */
-    /* Background / Surface Colors */
-    --color-surface-1: #413f41;
-    /* var(--color-surface-1) */
+    /* Hover Color */
     --color-surface-2: #242424;
     /* var(--color-surface-2) */
+    /*Body-Background Color*/
     --color-surface-3: #232323;
     /* var(--color-surface-3) */
-    --color-surface-4: #050000;
-    /* var(--color-surface-4) */
     --color-surface-5: #ffffff;
     /* var(--color-surface-5) */
 }
@@ -72,7 +66,7 @@ h1 {
 
 h2,
 h3 {
-    color: var(--color-accent-neon-green-2);
+    color: var(--color-accent-neon-green-1);
 }
 
 h2 {

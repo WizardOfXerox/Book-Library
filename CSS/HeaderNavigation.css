@@ -104,16 +104,15 @@
     }
 } */
 
-.nav-header a:hover,
-.profile-card button:hover {
-    background-color: var(--color-accent-neon-green-2);
+.nav-header a:hover {
+    background-color: var(--color-accent-neon-green-1);
     color: var(--color-surface-2);
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
 .nav-header a.active {
-    background-color: var(--color-accent-neon-green-2);
+    background-color: var(--color-accent-neon-green-1);
     color: var(--color-surface-2);
 }
 
@@ -133,7 +132,7 @@
 }
 
 .nav-search-container i:hover {
-    background-color: var(--color-accent-neon-green-2);
+    background-color: var(--color-accent-neon-green-1);
     color: var(--color-surface-2);
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
@@ -166,19 +165,19 @@
 
 @keyframes neon1 {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-accent-neon-green-2), 0 0 70px var(--color-accent-neon-green-2), 0 0 80px var(--color-accent-neon-green-2), 0 0 100px var(--color-accent-neon-green-2), 0 0 150px var(--color-accent-neon-green-2);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-accent-neon-green-1), 0 0 70px var(--color-accent-neon-green-1), 0 0 80px var(--color-accent-neon-green-1), 0 0 100px var(--color-accent-neon-green-1), 0 0 150px var(--color-accent-neon-green-1);
     }
     to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--color-accent-neon-green-2), 0 0 35px var(--color-accent-neon-green-2), 0 0 40px var(--color-accent-neon-green-2), 0 0 50px var(--color-accent-neon-green-2), 0 0 75px var(--color-accent-neon-green-2);
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--color-accent-neon-green-1), 0 0 35px var(--color-accent-neon-green-1), 0 0 40px var(--color-accent-neon-green-1), 0 0 50px var(--color-accent-neon-green-1), 0 0 75px var(--color-accent-neon-green-1);
     }
 }
 
 @keyframes neon2 {
     from {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-accent-neon-green-2), 0 0 70px var(--color-accent-neon-green-2), 0 0 80px var(--color-accent-neon-green-2), 0 0 100px var(--color-accent-neon-green-2), 0 0 150px var(--color-accent-neon-green-2);
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-accent-neon-green-1), 0 0 70px var(--color-accent-neon-green-1), 0 0 80px var(--color-accent-neon-green-1), 0 0 100px var(--color-accent-neon-green-1), 0 0 150px var(--color-accent-neon-green-1);
     }
     to {
-        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--color-accent-neon-green-2), 0 0 35px var(--color-accent-neon-green-2), 0 0 40px var(--color-accent-neon-green-2), 0 0 50px var(--color-accent-neon-green-2), 0 0 75px var(--color-accent-neon-green-2);
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--color-accent-neon-green-1), 0 0 35px var(--color-accent-neon-green-1), 0 0 40px var(--color-accent-neon-green-1), 0 0 50px var(--color-accent-neon-green-1), 0 0 75px var(--color-accent-neon-green-1);
     }
 }
 

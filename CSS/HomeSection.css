@@ -8,11 +8,10 @@
 .home-container {
     display: flex;
     flex-wrap: wrap;
-    /* background-color: var(--color-gray-dark); */
+    /* background-color: var(--color-gray-medium); */
     background-color: transparent;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    color: var(--color-gray-light);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -30,7 +29,6 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color: var(--color-gray-light);
     text-align: center;
     align-items: center;
     width: 250px;
@@ -38,6 +36,17 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.prog-card a {
+    text-decoration: none;
+    color: var(--color-gray-light);
+}
+
+.prog-card h2 {
+    color: var(--color-accent-neon-green-1);
+    margin: 0;
+    font-size: 1.5em;
 }
 
 
@@ -60,7 +69,7 @@
     animation: progress-bar-load 3s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
-    background: var(--color-accent-neon-green-2);
+    background: var(--color-accent-neon-green-1);
     height: 12px;
     width: 0;
     -webkit-animation: progress-bar-load 3s normal forwards;
@@ -81,7 +90,7 @@
 .profile-items i {
     display: flex;
     font-size: 20px;
-    color: var(--color-accent-neon-green-2);
+    color: var(--color-accent-neon-green-1);
     margin-bottom: 5px;
     margin-right: 10px;
 }
@@ -116,7 +125,7 @@
 .profile-social {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-gray-deep);
+    background-color: var(--color-surface-3);
     border-radius: 10px;
     padding: 5px;
     align-items: center;
@@ -130,6 +139,7 @@
 }
 
 .profile-social ion-icon {
+    margin-top: 5px;
     color: var(--color-accent-neon-green-1);
 }
 
@@ -141,7 +151,7 @@
 }
 
 .profile-card h2 {
-    color: var(--color-accent-neon-green-2);
+    color: var(--color-accent-neon-green-1);
     margin: 0;
     font-size: 1.5em;
 }
@@ -195,17 +205,8 @@
     user-select: none;
 }
 
-.home-content h2 {
-    color: var(--color-accent-neon-green-2);
-    margin-bottom: 20px;
-}
-
-.services-section {
-    width: 100%;
-}
-
-.services-section h1 {
-    color: var(--color-accent-neon-green-2);
+.label-contents h1 {
+    color: var(--color-accent-neon-green-1);
     margin-bottom: 20px;
     margin-top: 0px;
     text-align: left;
@@ -310,7 +311,7 @@
 
 .label-card h2 {
     margin: 10px 0;
-    color: var(--color-accent-neon-green-2);
+    color: var(--color-accent-neon-green-1);
     text-align: center;
 }
 
@@ -334,7 +335,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 20px;
-    background-color: var(--color-gray-dark);
+    background-color: var(--color-gray-medium);
     flex: 1 1 calc(30% - 20px);
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -396,7 +397,7 @@
 
 .testimonials-section h2 {
     text-align: center;
-    border-bottom: 1px solid var(--color-accent-neon-green-2);
+    border-bottom: 1px solid var(--color-accent-neon-green-1);
     margin: 0px;
 }
 
@@ -406,7 +407,7 @@
 .clients-card {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-gray-dark);
+    background-color: var(--color-gray-medium);
     border-radius: 10px;
     padding: 10px;
     align-items: center;
@@ -424,7 +425,7 @@
 
 .clients-section h2 {
     text-align: center;
-    border-bottom: 1px solid var(--color-accent-neon-green-2);
+    border-bottom: 1px solid var(--color-accent-neon-green-1);
     margin: 0px;
 }
 
@@ -440,7 +441,7 @@
 }
 
 .clients-card p {
-    color: var(--color-accent-neon-green-2);
+    color: var(--color-accent-neon-green-1);
     text-align: center;
     font-size: large;
     margin-bottom: 0;

@@ -9,7 +9,7 @@
 } */
 
 .creation-nav-link-btn:hover {
-    background-color: var(--color-accent-neon-green-2);
+    background-color: var(--color-accent-neon-green-1);
     color: var(--color-surface-2);
 }
 
@@ -99,7 +99,7 @@
 
 .book-card h2 {
     margin: 10px 0;
-    color: var(--color-accent-neon-green-2);
+    color: var(--color-accent-neon-green-1);
     text-align: center;
 }
 

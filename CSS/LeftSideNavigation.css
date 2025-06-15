@@ -39,7 +39,7 @@
 }
 
 .nav-sidebar a:hover {
-    background-color: var(--color-accent-neon-green-2);
+    background-color: var(--color-accent-neon-green-1);
     color: #242424;
 }
 
@@ -61,13 +61,13 @@
 }
 
 .creation-nav-link-btn.active {
-    background-color: var(--color-accent-neon-green-2);
+    background-color: var(--color-accent-neon-green-1);
     color: #242424;
     animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
 .openbtn:hover {
-    background-color: var(--color-accent-neon-green-2);
+    background-color: var(--color-accent-neon-green-1);
     color: #242424;
 }
 

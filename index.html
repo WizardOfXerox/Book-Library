@@ -41,7 +41,7 @@
                 <a class="nav-link" data-target="bookmark"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>Bookmarks</a>
                 <a class="nav-link" data-target="history"><i class="fa-solid fa-clock-rotate-left" style="margin-right: 10px;"></i>History</a>
                 <a class="nav-pin" style="float: right;"><i class="fa-solid fa-thumbtack" id="pin"></i></a>
-                <a class="nav-account" style="float: right;" onclick="showPopup()"><i class="fa-solid fa-user-tie" style="margin-right: 10px;"></i>Account</a>
+                <a class="nav-link" data-target="account" style="float: right;"><i class="fa-solid fa-user-tie" style="margin-right: 10px;"></i>Account</a>
                 <div class="nav-search-container">
                     <i class="fas fa-search" style="margin-right: 10px;"></i>
                     <input class="nav-search" type="text" id="mySearch-text" onkeyup="myFunction()" placeholder="Search..." title="Find Books...">
@@ -109,6 +109,9 @@
                         <div class="profile-social animate__animated animate__pulse animate__delay-5s">
                             <div class="profile-social-content">
                                 <p>Linked Accounts:</p>
+                                <a href="https://twitter.com" aria-label="Twitter">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
                                 <a href="https://discord.com" aria-label="Discord">
                                     <ion-icon name="logo-discord"></ion-icon>
                                 </a>
@@ -244,7 +247,7 @@
                         <button onclick="nextPage()" class="carousel-button right-btn">&#9654</button>
                     </div>
                     <div class="prog-card animate__animated animate__pulse">
-                        <ion-icon name="alert-circle-outline" style="font-size: 50px; color: #02ff88;"></ion-icon>
+                        <!-- <ion-icon name="alert-circle-outline" style="font-size: 50px; color: #02ff88;"></ion-icon> -->
                         <h2 style="margin-bottom: 0;">Announcement</h2>
                         <div class="profile-details">
                             <a>The Website is currently on Maintainance and some feature wont work for now.</a>
@@ -1571,6 +1574,91 @@
             </div>
         </div>
 
+        <div id="account" class="section">
+            <div class="home-frame">
+                <div class="profile-container" style="flex-wrap: nowrap;">
+                    <!-- Sign In Button (Shown Before Login) -->
+                    <div id="profileBeforeLogin" class="profile-card animate__animated animate__pulse" style="align-content: center; justify-content: center; display: none; max-height: 200px;">
+                        <button class="profile-btn" onclick="showPopup()"><i class="fa-solid fa-user-tie"></i> Sign In</button>
+                    </div>
+
+                    <!-- Full Profile (Shown After Login) -->
+                    <div id="profileAfterLogin" class="profile-card animate__animated animate__pulse" style="display: flex; max-height: fit-content;">
+                        <img src="./Images/mosaic_mosaic8.jpg" alt="User Image" class="profile-pic">
+                        <h2 id="profileName">User</h2>
+                        <p>I Am A Book Worm</p>
+                        <div class="profile-details">
+                            <div class="profile-item animate__animated animate__pulse animate__delay-1s">
+                                <ion-icon name="bookmarks"></ion-icon>
+                                <span>Bookmarks: 81</span>
+                            </div>
+                            <div class="profile-item animate__animated animate__pulse animate__delay-2s">
+                                <ion-icon name="book"></ion-icon>
+                                <span>Reading: 20</span>
+                            </div>
+                            <div class="profile-item animate__animated animate__pulse animate__delay-3s">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                                <span>Completed: 20</span>
+                            </div>
+                        </div>
+                        <div class="profile-social animate__animated animate__pulse animate__delay-5s">
+                            <div class="profile-social-content" style="flex-direction: column; padding: 10px;">
+                                <p>Linked Accounts:</p>
+                                <div style="display: flex; flex-direction: row; gap: 15px; justify-content: center;">
+                                    <a href="https://twitter.com" aria-label="Twitter">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="https://discord.com" aria-label="Discord">
+                                        <ion-icon name="logo-discord"></ion-icon>
+                                    </a>
+                                    <a href="https://facebook.com" aria-label="Facebook">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="https://youtube.com" aria-label="Youtube">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="showSettings()" style="margin-top: 15px; padding: 8px 15px;">⚙️ Account Settings</button>
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex: 1 1 auto; flex-wrap: nowrap;">
+                        <div class="download">
+                            <i class="fas fa-download"></i> <span>Downloads</span>
+                            <div class="polaroid-container">
+                                <div class="polaroid">
+                                    <img src="./Images/BOOKCOVER/1.png" alt="Last Day">
+                                    <div class="caption">Last Day</div>
+                                </div>
+                                <div class="polaroid">
+                                    <img src="./Images/BOOKCOVER/1.png" alt="The Haunted House">
+                                    <div class="caption">The Haunted House</div>
+                                </div>
+                                <div class="polaroid">
+                                    <img src="./Images/BOOKCOVER/1.png" alt="Dark Obsession">
+                                    <div class="caption">Dark Obsession</div>
+                                </div>
+                                <div class="polaroid">
+                                    <img src="./Images/BOOKCOVER/1.png" alt="Cyber City">
+                                    <div class="caption">Cyber City</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bookmark">
+                            <i class="fas fa-bookmark"></i> <span>Bookmark</span>
+                            <div class="polaroid-container">
+                                <div class="polaroid">
+                                    <img src="./Images/BOOKCOVER/1.png" alt="Last Day">
+                                    <div class="caption"><i class="fas fa-share"></i>Share</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="popup-overlay" id="popupOverlay">
             <div class="login" id="loginBox">
                 <h1>Online Book Library</h1>
@@ -1642,7 +1730,7 @@
                 <a href="#books" data-target="book">Books</a>
                 <a href="#bookmark" data-target="bookmark">Bookmark</a>
                 <a href="#history" data-target="history">History</a>
-                <a href="#" onclick="showPopup()" data-target="account">Account</a>
+                <a href="#account" onclick="showPopup()" data-target="account">Account</a>
             </div>
         </div>
     </div>
