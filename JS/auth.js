@@ -89,13 +89,22 @@ function handleAuth(e) {
 }
 
 function updateProfileUI(username) {
-    // Update visible name
     currentUser = username;
-    document.getElementById('profileName').textContent = username;
 
-    // Show full profile, hide sign-in
-    document.getElementById('profileBeforeLogin').style.display = 'none';
-    document.getElementById('profileAfterLogin').style.display = 'flex';
+    // Update all elements with id="profileName"
+    document.querySelectorAll('[id=profileName]').forEach(el => {
+        el.textContent = username;
+    });
+
+    // Hide all elements with id="profileBeforeLogin"
+    document.querySelectorAll('[id=profileBeforeLogin]').forEach(el => {
+        el.style.display = 'none';
+    });
+
+    // Show all elements with id="profileAfterLogin"
+    document.querySelectorAll('[id=profileAfterLogin]').forEach(el => {
+        el.style.display = 'flex';
+    });
 }
 
 window.onload = showPopup;
