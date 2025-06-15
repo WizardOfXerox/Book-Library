@@ -120,6 +120,7 @@
                                 </a>
                             </div>
                         </div>
+                        <button onclick="showSettings()" style="margin-top: 15px; padding: 8px 15px;">⚙️ Account Settings</button>
                     </div>
                     <div class="carousel-container" id="carousel-container">
                         <!-- Left Arrow -->
@@ -1603,6 +1604,26 @@
                 <p id="switchPrompt">
                     Don’t have an account? <a href="#" onclick="switchMode()">Sign up now</a>
                 </p>
+            </div>
+        </div>
+
+        <div class="popup-overlay" id="settingsOverlay">
+            <div class="login" id="settingsBox">
+                <h1>Account Settings</h1>
+
+                <form onsubmit="saveSettings(event)">
+                    <label for="editUsername">Username</label>
+                    <input type="text" id="editUsername" required>
+
+                    <label for="editPassword">Password</label>
+                    <input type="password" id="editPassword" required>
+
+                    <div class="form-buttons-container">
+                        <button type="submit">Save</button>
+                        <button type="button" onclick="logout()">Logout</button>
+                        <button type="button" class="close-btn" onclick="closeSettings()">Cancel</button>
+                    </div>
+                </form>
             </div>
         </div>
 
