@@ -128,13 +128,13 @@ function selectChapter(index, updateHash = true) {
     chapterTitleEl.focus();
 }
 
-const initialHash = window.location.hash.substring(1); // Remove the #
-if (initialHash) {
-    const index = chapters.findIndex(ch => ch.id === initialHash);
+window.addEventListener('hashchange', () => {
+    const hash = window.location.hash.substring(1);
+    const index = chapters.findIndex(ch => ch.id === hash);
     if (index !== -1) {
-        selectChapter(index, false); // false = don't update hash again
+        selectChapter(index, false);
     }
-}
+});
 
 prevBtn.addEventListener('click', () => {
     if (currentChapterIndex > 0) selectChapter(currentChapterIndex - 1);
@@ -149,8 +149,6 @@ menuToggleBtn.addEventListener('click', () => {
     container.classList.toggle('sidebar-closed', !isOpen);
     menuToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 });
-
-selectChapter(0);
 
 window.addEventListener('keydown', (e) => {
     if (e.ctrlKey && !e.shiftKey && !e.altKey) {
@@ -170,3 +168,15 @@ window.addEventListener('keydown', (e) => {
         }
     }
 });
+
+const initialHash = window.location.hash.substring(1);
+let initialIndex = 0;
+
+if (initialHash) {
+    const indexFromHash = chapters.findIndex(ch => ch.id === initialHash);
+    if (indexFromHash !== -1) {
+        initialIndex = indexFromHash;
+    }
+}
+
+selectChapter(initialIndex, false);

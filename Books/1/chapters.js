@@ -1,7 +1,7 @@
 // chapters.js
 export const chapters = [{
         id: "prologue",
-        title: "If you can’t run, walk. If you can’t walk, crawl. But never, ever stand still.",
+        title: "Prologue: If you can’t run, walk. If you can’t walk, crawl. But never, ever stand still.",
         content: `That line had been echoing in Phil Knight’s mind for years long before Nike was a household name, long before investors called him a genius. He sat now on a weathered bench by the same running track where it had all started. It wasn’t Olympic-grade. It wasn’t perfect. But it had something more important: it had memory. Sweat. Struggle. Ambition. It had the soul of something sacred.
 Back in 1964, Phil wasn’t a CEO. He wasn’t a millionaire. He was a runner. A son. A man clinging to an idea so fragile, the world laughed at it.
 But to Phil, it wasn’t just an idea. It was a calling.
