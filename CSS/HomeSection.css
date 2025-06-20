@@ -200,6 +200,11 @@
     user-select: none;
 }
 
+.home-content a {
+    height: 100%;
+    width: 100%;
+}
+
 .home-content-pane p {
     white-space: wrap;
     text-overflow: ellipsis;
