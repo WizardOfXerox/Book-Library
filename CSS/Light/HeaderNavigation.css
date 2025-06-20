@@ -1,7 +1,7 @@
 /*Navigation */
 
 .nav-header {
-    background-color: var(--color-gray-medium);
+    background-color: #F2F3F4;
     position: fixed;
     top: 0;
     width: 100%;
@@ -42,7 +42,7 @@
 .profile-card button {
     float: left;
     display: block;
-    color: var(--color-gray-light);
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -105,15 +105,15 @@
 } */
 
 .nav-header a:hover {
-    background-color: var(--color-accent-neon-green-1);
-    color: var(--color-surface-2);
+    background-color: #00FFBF;
+    color: black;
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
 .nav-header a.active {
     background-color: var(--color-accent-neon-green-1);
-    color: var(--color-surface-2);
+    color: black;
 }
 
 .nav-links .nav-search-container:hover {
@@ -123,7 +123,7 @@
 .nav-search-container i {
     float: left;
     display: block;
-    color: var(--color-gray-light);
+    color: black;
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
@@ -132,14 +132,14 @@
 }
 
 .nav-search-container i:hover {
-    background-color: var(--color-accent-neon-green-1);
-    color: var(--color-surface-2);
+    background-color: #00FFBF;
+    color: black;
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
 .nav-pin i {
-    color: var(--color-gray-light);
+    color: black;
 }
 
 .text-logo {
@@ -185,7 +185,7 @@
     width: 220px;
     font-size: 16px;
     background-color: transparent;
-    color: #fff;
+    color: black;
     text-align: center;
     letter-spacing: 3px;
     font-family: 'Nunito', sans-serif;

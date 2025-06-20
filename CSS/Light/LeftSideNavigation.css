@@ -29,7 +29,7 @@
     padding-left: 12px;
     text-decoration: none;
     font-size: 18px;
-    color: #B3B3B3;
+    olor: black;
     display: block;
     transition: 0.3s;
 }
@@ -39,7 +39,7 @@
 }
 
 .nav-sidebar a:hover {
-    background-color: var(--color-accent-neon-green-1);
+    background-color: #00ffbf;
     color: #242424;
 }
 
@@ -53,8 +53,8 @@
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #2e2e31;
-    color: #B3B3B3;
+    background-color: #f2f2f2;
+    color: black;
     padding: 10px 15px;
     border: none;
     margin: 10px;

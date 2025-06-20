@@ -19,22 +19,22 @@
 :root {
     /* Text Colors */
     /* Header Color */
-    --color-accent-neon-green-1: #05ff82;
+    --color-accent-neon-green-1: #00FFBF;
     /* var(--color-accent-neon-green-1) */
     /* Paragraph Color */
-    --color-gray-light: #b3b3b3;
+    --color-gray-light: #F2F3F4;
     /* var(--color-gray-light) */
     /* Cards-Background Color */
-    --color-gray-medium: #2e2e31;
+    --color-gray-medium: #010B13;
     /* var(--color-gray-medium) */
     /* Testimonial-Background Color */
-    --color-gray-deep: #1f1f1f;
+    --color-gray-deep: #F2F3F4;
     /* var(--color-gray-deep) */
     /* Hover Color */
-    --color-surface-2: #242424;
+    --color-surface-2: #F2F3F4;
     /* var(--color-surface-2) */
     /*Body-Background Color*/
-    --color-surface-3: #232323;
+    --color-surface-3: #F2F3F4;
     /* var(--color-surface-3) */
     --color-surface-5: #ffffff;
     /* var(--color-surface-5) */
@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-    color: var(--color-accent-neon-green-1);
+    color: black;
 }
 
 h2,
