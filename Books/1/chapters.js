@@ -1,7 +1,7 @@
 // chapters.js
 export const chapters = [{
         id: "prologue",
-        title: "Prologue 1: Flying Since 1964",
+        title: "Prologue: Flying Since 1964",
         content: `Flying Since 1964 " If you can’t run, walk. If you can’t walk, crawl. But never, ever stand still."
 That line had been echoing in Phil Knight’s mind for years long before Nike was a household name...
 ...

@@ -5,6 +5,37 @@ const chapters = rawChapters.map((ch, i) => ({
     id: ch.id || `chapter-${i}`
 }));
 
+function selectChapter(index, updateHash = true) {
+    if (index < 0 || index >= chapters.length) return;
+    currentChapterIndex = index;
+    const ch = chapters[index];
+
+    chapterTitleEl.textContent = ch.title;
+    chapterContentEl.textContent = ch.content;
+    breakAfterSentences('chapterContent', 5);
+    renderChapterList();
+    updateNavButtons();
+
+    if (updateHash) {
+        window.location.hash = ch.id; // 👈 update URL hash
+    }
+
+    if (window.innerWidth <= 1024) {
+        sidebar.classList.remove('open');
+        menuToggleBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    chapterTitleEl.focus();
+}
+
+const initialHash = window.location.hash.substring(1); // Remove the #
+if (initialHash) {
+    const index = chapters.findIndex(ch => ch.id === initialHash);
+    if (index !== -1) {
+        selectChapter(index, false); // false = don't update hash again
+    }
+}
+
 let currentChapterIndex = 0;
 
 const chapterListEl = document.getElementById('chapterList');
