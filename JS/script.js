@@ -594,7 +594,6 @@ function updateDots() {
 
 // Create dots
 function createDots() {
-    // Check if the device width is less than or equal to 530px
     if (window.matchMedia('(max-width: 600px)').matches) {
         console.log("Creating dots for mobile view");
         dotsContainer.style.display = 'none'; // Hide dots for mobile view
@@ -722,7 +721,7 @@ function addScrollAnimation(label) {
 
     if (distance > 0) {
         // Optional: adjust scroll speed — longer text scrolls longer
-        const duration = Math.min(10, Math.max(3, distance / 30)); // between 3s–10s
+        const duration = Math.min(10, Math.max(3, distance / 30));
 
         const animationName = `scroll-${Math.floor(Math.random() * 1000000)}`;
 
@@ -733,12 +732,11 @@ function addScrollAnimation(label) {
         }
       `;
 
-        // Inject keyframes into a <style> tag
         const style = document.createElement("style");
         style.innerHTML = keyframes;
         document.head.appendChild(style);
 
-        // Add hover behavior
+    
         card.addEventListener("mouseenter", () => {
             textEl.classList.add("scrolling-active");
             textEl.style.animation = `${animationName} ${duration}s linear infinite alternate`;
@@ -751,5 +749,4 @@ function addScrollAnimation(label) {
     }
 }
 
-// Apply to all .label-title blocks
 document.querySelectorAll(".label-title").forEach(addScrollAnimation);
