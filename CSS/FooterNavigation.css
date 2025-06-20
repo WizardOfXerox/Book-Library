@@ -68,7 +68,7 @@
 .footer-nav a {
     margin: 5px;
     margin-top: 0;
-    color: var(--color-accent-neon-green-1);
+    color: black;
     text-decoration: none;
     font-weight: bold;
     opacity: 1;
@@ -78,8 +78,8 @@
 }
 
 .footer-nav a:hover {
-    background-color: var(--color-accent-neon-green-1);
-    color: #202020;
+    background-color: #00ffbf;
+    color: black;
     transition: all 0.4s ease-in-out;
     border-radius: 50px;
 }
@@ -92,7 +92,7 @@
     align-items: center;
     position: relative;
     bottom: 30px;
-    border-top: 10px solid var(--color-accent-neon-green-1);
+    border-top: 10px solid #00ffbf;
     border-width: 5px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -103,13 +103,13 @@
 
 .copyright-text p {
     font-size: 14px;
-    color: var(--color-gray-light);
+    color: black;
     margin-top: 16px;
     margin-bottom: 10px;
 }
 
 .copyright-text p a {
-    color: var(--color-accent-neon-green-1);
+    color: #00ffbf;
     text-decoration: none;
     opacity: 1;
     font-weight: bold;
