@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Book Library</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        /* Reset & base */
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #fafafa;
+            color: #222;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Dark theme */
+        
+        body.dark {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+        a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+        
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+        /* Layout grid: header + content */
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #6366f1;
+            color: white;
+            padding: 12px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgb(99 102 241 / 0.4);
+            z-index: 1000;
+        }
+        
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        header .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+        
+        button {
+            all: unset;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            padding: 8px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+        
+        button:focus-visible {
+            outline: 3px solid #a5b4fc;
+            outline-offset: 2px;
+        }
+        
+        button:hover {
+            background-color: rgba(255 255 255 / 0.2);
+        }
+        /* Container: sidebar + main content */
+        
+        .container {
+            flex: 1 1 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 0;
+            /* to prevent overflow */
+            transition: grid-template-columns 0.3s ease;
+            background: transparent;
+        }
+        /* When sidebar is closed, collapse its space */
+        
+        .container.sidebar-closed {
+            grid-template-columns: 0 1fr;
+        }
+        /* Sidebar with chapter list */
+        
+        nav.sidebar {
+            border-right: 1px solid #ddd;
+            background: rgba(255 255 255 / 0.8);
+            backdrop-filter: saturate(180%) blur(12px);
+            padding: 24px 16px;
+            overflow-y: auto;
+            box-shadow: inset -1px 0 0 rgb(0 0 0 / 0.05);
+            transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+            transform: translateX(-100%);
+        }
+        
+        nav.sidebar.open {
+            transform: translateX(0);
+        }
+        
+        body.dark nav.sidebar {
+            background: rgba(18, 18, 18, 0.8);
+            border-color: #333;
+        }
+        
+        nav.sidebar h2 {
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            font-weight: 600;
+            padding-left: 8px;
+        }
+        
+        nav.sidebar ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        nav.sidebar li {
+            margin-bottom: 12px;
+        }
+        
+        nav.sidebar {
+            width: 300px;
+            transition: width 0.3s ease;
+        }
+        
+        nav.sidebar.closed {
+            width: 0;
+        }
+        
+        nav.sidebar button.chapter-item {
+            all: unset;
+            cursor: pointer;
+            max-width: calc(100% - 20px);
+            display: block;
+            padding: 8px 12px;
+            border-radius: 12px;
+            font-weight: 500;
+            color: #444;
+            text-align: left;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        
+        body.dark nav.sidebar button.chapter-item {
+            color: #bbb;
+        }
+        
+        nav.sidebar button.chapter-item:hover,
+        nav.sidebar button.chapter-item:focus-visible {
+            background-color: #6366f1;
+            color: white;
+            outline: none;
+        }
+        
+        nav.sidebar button.chapter-item.active {
+            background-color: #4f46e5;
+            color: white;
+            font-weight: 700;
+        }
+        /* Main reading area */
+        
+        main.reader {
+            padding: 48px;
+            overflow-y: auto;
+            max-width: 720px;
+            margin: 0 auto;
+            scroll-padding-top: 80px;
+            transition: margin-left 0.3s ease-in-out, padding 0.3s ease;
+            padding-left: 0px;
+        }
+        
+        main.reader article {
+            outline: none;
+            line-height: 40px;
+        }
+        
+        body.dark main.reader {
+            color: #eee;
+        }
+        
+        main.reader h1.chapter-title {
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #4f46e5;
+        }
+        
+        body.dark main.reader h1.chapter-title {
+            color: #a5b4fc;
+        }
+        
+        main.reader .chapter-content p {
+            margin-bottom: 1.4em;
+            font-size: 1.125rem;
+            white-space: pre-line;
+        }
+        /* Fixed footer with toggle theme button for mobile */
+        
+        footer {
+            padding: 12px 24px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #888;
+            background: transparent;
+        }
+        /* Responsive */
+        
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr !important;
+                /* Force full width for main */
+            }
+            nav.sidebar {
+                position: fixed;
+                top: 64px;
+                left: 0;
+                bottom: 0;
+                scroll-behavior: smooth;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                width: 250px;
+            }
+            nav.sidebar::-webkit-scrollbar {
+                display: none;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            nav.sidebar.open {
+                transform: translateX(0);
+            }
+            main.reader {
+                padding: 24px 16px;
+                max-width: 100%;
+                margin: 20px;
+            }
+            header .menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+                background: rgba(255 255 255 / 0.2);
+                transition: background-color 0.2s ease;
+            }
+            header .menu-toggle:hover,
+            header .menu-toggle:focus-visible {
+                background: rgba(255 255 255 / 0.4);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            main.reader {
+                padding: 20px 12px;
+            }
+            header .logo {
+                font-size: 1.25rem;
+                text-align: center;
+            }
+            nav.sidebar {
+                width: 100%;
+                transition: width 0.3s ease;
+            }
+            header .menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 8px;
+                background: rgba(255 255 255 / 0.2);
+                transition: background-color 0.2s ease;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Toggle chapter list" title="Toggle chapter list" aria-controls="sidebar" aria-expanded="false" type="button">
+    <span class="material-icons" aria-hidden="true">menu</span>
+  </button>
+        <div class="logo" tabindex="0">Online Book Library</div>
+        <div class="nav-buttons" role="navigation" aria-label="Chapter navigation">
+            <button id="prevChapter" aria-label="Previous chapter" title="Previous chapter" disabled>
+      <span class="material-icons" aria-hidden="true">navigate_before</span>
+    </button>
+            <button id="nextChapter" aria-label="Next chapter" title="Next chapter">
+      <span class="material-icons" aria-hidden="true">navigate_next</span>
+    </button>
+            <button id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle dark/light theme" type="button">
+      <span class="material-icons" aria-hidden="true" id="themeIcon">brightness_4</span>
+    </button>
+        </div>
+    </header>
+
+    <div class="container sidebar-closed" id="container">
+        <nav class="sidebar" id="sidebar" aria-label="Chapter list">
+            <h2>Chapters</h2>
+            <ul id="chapterList" role="list">
+                <!-- Chapters loaded by JS -->
+            </ul>
+        </nav>
+
+        <main class="reader" role="main" tabindex="0" aria-live="polite" aria-atomic="true">
+            <h1 class="chapter-title" id="chapterTitle">Loading...</h1>
+            <article class="chapter-content" id="chapterContent">
+                Please select a chapter from the list.
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        Online Book Library &copy; 2025 | Built for comfortable, distraction-free reading
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
