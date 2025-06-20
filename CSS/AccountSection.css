@@ -45,6 +45,12 @@
     transition: transform 0.5s ease;
 }
 
+.login a {
+    color: var(--color-accent-neon-green-1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .login.show {
     transform: translateY(0);
 }
