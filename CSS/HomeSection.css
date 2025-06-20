@@ -175,7 +175,7 @@
 }
 
 .home-content {
-    height: 450px;
+    height: 510px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -188,11 +188,6 @@
     flex-shrink: 0;
 }
 
-.home-content a {
-    display: flex;
-    flex: 1 1 100%;
-}
-
 .home-content-pane {
     display: flex;
     border-radius: 10px;
@@ -203,6 +198,18 @@
     color: white;
     justify-content: flex-end;
     user-select: none;
+}
+
+.home-content-pane p {
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.home-content-pane h2 {
+    color: var(--color-accent-neon-green-1);
+    margin: 0;
+    text-align: left;
 }
 
 .label-contents h1 {
@@ -248,16 +255,47 @@
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: center;
-    text-wrap: nowrap;
+    white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 150px;
     overflow: hidden;
 }
 
+.scroll-container {
+    width: 150px;
+    /* fixed width of label */
+    overflow: hidden;
+    text-wrap: nowrap;
+    position: relative;
+}
+
+.scroll-text {
+    /* creates delay before it starts moving */
+    animation: none;
+}
+
+
+/* Only scroll if JavaScript adds this class */
+
+.label-card:hover+.scroll-container .scroll-text.scrolling-active {
+    text-overflow: unset;
+    overflow: visible;
+    animation: scroll-left-right 3s linear infinite alternate;
+}
+
+@keyframes scroll-left-right {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 .label-card {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0px;
     flex: 1 1 calc(10% - 20px);
     min-width: 150px;
@@ -271,21 +309,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 100%;
     background-size: 175px 250px;
     background-position: center center;
     background-repeat: no-repeat;
     aspect-ratio: 2 / 3;
-}
-
-.label-card-image h2 {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, margin 0.5s ease-out;
-}
-
-.label-card-image:hover h2 {
-    opacity: 1;
 }
 
 @media screen and (max-width: 900px) {
@@ -307,16 +336,6 @@
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
-}
-
-.label-card h2 {
-    margin: 10px 0;
-    color: var(--color-accent-neon-green-1);
-    text-align: center;
-}
-
-.label-card p {
-    margin: 0;
 }
 
 

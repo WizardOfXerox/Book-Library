@@ -10,8 +10,10 @@
 }
 
 @media screen and (max-width: 884px) and (orientation: portrait) {
-    .about-content {
-        max-height: 300px;
+    .home-content,
+    .home-content a,
+    .home-content-panel {
+        max-height: 400px;
     }
 }
 
@@ -67,6 +69,7 @@
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20px, transparent);
+    z-index: 1000;
 }
 
 .right-btn {

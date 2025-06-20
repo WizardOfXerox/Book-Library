@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 link.classList.add("active");
             });
 
+            document.querySelectorAll(".label-title").forEach(addScrollAnimation);
+
             topFunction(); // Optional scroll-to-top
         }
     }
@@ -61,6 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.error("Target section not found:", target); // Debugging
             }
 
+            document.querySelectorAll(".label-title").forEach(addScrollAnimation);
+
             topFunction();
         });
     });
@@ -78,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const sections = document.querySelectorAll(".section-c1");
             sections.forEach((section) => section.classList.remove("active"));
             document.getElementById(target).classList.add("active");
+            document.querySelectorAll(".label-title").forEach(addScrollAnimation);
             topFunction();
         });
     });
@@ -104,6 +109,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 correspondingNavLink.classList.add("active");
             }
 
+            document.querySelectorAll(".label-title").forEach(addScrollAnimation);
+
             topFunction();
         });
     });
@@ -126,6 +133,8 @@ document.addEventListener("keydown", (event) => {
 
     if (event.key === 'ArrowDown') {
         event.preventDefault(); // Prevent default behavior
+
+        document.querySelectorAll(".label-title").forEach(addScrollAnimation);
 
         if (activeIndex > 0) { // If there is a previous link in the filtered list
             const previousIndex = activeIndex - 1; // Index of the previous link
@@ -160,6 +169,8 @@ document.addEventListener("keydown", (event) => {
         }
     } else if (event.key === 'ArrowUp') {
         event.preventDefault(); // Prevent default behavior
+
+        document.querySelectorAll(".label-title").forEach(addScrollAnimation);
 
         if (activeIndex !== -1 && activeIndex < filteredNavLinks.length - 1) { // If there is a next link in the filtered list
             const nextIndex = activeIndex + 1; // Index of the next link
@@ -204,6 +215,8 @@ const body = document.querySelector("body"),
 
 sidebarToggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
+    document.querySelectorAll(".label-title").forEach(addScrollAnimation);
+    updateCarousel();
     if (sidebar.dataset.state === "closed") {
         sidebar.dataset.state = "opened";
     } else {
@@ -244,6 +257,7 @@ function resetHeader() {
         const sidebar = document.querySelector('.nav-sidebar');
         header.style.transform = 'translateY(-48px)';
         maincontent.style.paddingTop = '20px';
+        sidebar.style.paddingTop = '20px';
     }
 }
 
@@ -283,6 +297,7 @@ headerElement.addEventListener('mouseover', () => {
     // Ensure the header is in the visible state when hovered
     headerElement.style.transform = 'translateY(0px)';
     maincontent.style.paddingTop = '70px';
+    sidebar.style.paddingTop = '70px';
 });
 
 headerElement.addEventListener('mouseout', () => {
@@ -292,6 +307,7 @@ headerElement.addEventListener('mouseout', () => {
         // Ensure the header is in the visible state when hovered
         headerElement.style.transform = 'translateY(0px)';
         maincontent.style.paddingTop = '70px';
+        sidebar.style.paddingTop = '70px';
 
     }
     if (isPinned === 'false') {
@@ -529,7 +545,7 @@ let currentX = 0;
 let animationFrameId;
 
 function getPageWidth() {
-    const about = document.querySelector('.about-content') || container;
+    const about = document.querySelector('.home-content') || container;
     return parseFloat(getComputedStyle(about).width);
 }
 
@@ -578,16 +594,27 @@ function updateDots() {
 
 // Create dots
 function createDots() {
-    for (let i = 0; i < totalPages; i++) {
-        const dot = document.createElement('div');
-        dot.classList.add('dot');
-        dot.addEventListener('click', () => {
-            currentIndex = i;
-            updateCarousel();
-        });
-        dotsContainer.appendChild(dot);
+    // Check if the device width is less than or equal to 530px
+    if (window.matchMedia('(max-width: 600px)').matches) {
+        console.log("Creating dots for mobile view");
+        dotsContainer.style.display = 'none'; // Hide dots for mobile view
+    } else {
+        console.log("Creating dots for desktop view");
+
+        for (let i = 0; i < dotsContainer.children.length; i++) {
+            dotsContainer.children[i].remove(); // Clear existing dots
+        }
+        for (let i = 0; i < totalPages; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            dot.addEventListener('click', () => {
+                currentIndex = i;
+                updateCarousel();
+            });
+            dotsContainer.appendChild(dot);
+        }
+        updateDots();
     }
-    updateDots();
 }
 
 createDots();
@@ -675,3 +702,54 @@ container.addEventListener('wheel', (e) => {
 
     scrollTimeout = setTimeout(startAutoSlide, 1000);
 }, { passive: false });
+
+// Scroll For Cards title
+
+function isEllipsed(el) {
+    return el.scrollWidth > el.clientWidth;
+}
+
+function addScrollAnimation(label) {
+    const textEl = label.querySelector('.scroll-text');
+    const container = label.querySelector('.scroll-container');
+    const card = label.querySelector('.label-card');
+
+    if (!textEl || !container || !card) return;
+
+    const scrollWidth = textEl.scrollWidth;
+    const containerWidth = container.clientWidth;
+    const distance = scrollWidth - containerWidth;
+
+    if (distance > 0) {
+        // Optional: adjust scroll speed — longer text scrolls longer
+        const duration = Math.min(10, Math.max(3, distance / 30)); // between 3s–10s
+
+        const animationName = `scroll-${Math.floor(Math.random() * 1000000)}`;
+
+        const keyframes = `
+        @keyframes ${animationName} {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-${distance}px); }
+        }
+      `;
+
+        // Inject keyframes into a <style> tag
+        const style = document.createElement("style");
+        style.innerHTML = keyframes;
+        document.head.appendChild(style);
+
+        // Add hover behavior
+        card.addEventListener("mouseenter", () => {
+            textEl.classList.add("scrolling-active");
+            textEl.style.animation = `${animationName} ${duration}s linear infinite alternate`;
+        });
+
+        card.addEventListener("mouseleave", () => {
+            textEl.classList.remove("scrolling-active");
+            textEl.style.animation = "none";
+        });
+    }
+}
+
+// Apply to all .label-title blocks
+document.querySelectorAll(".label-title").forEach(addScrollAnimation);

@@ -9,7 +9,7 @@
     padding-bottom: 60px;
     width: 200px;
     transform: translateX(0px);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, padding-top 0.5s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -22,7 +22,7 @@
 }
 
 .nav-sidebar[data-state="opened"]~main {
-    margin-left: 220px;
+    margin-left: 200px;
 }
 
 .nav-sidebar a {
